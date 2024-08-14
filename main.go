@@ -17,13 +17,13 @@ import (
 // go get -u "github.com/rubenv/sql-migrate"
 // go get -u "github.com/joho/godotenv"
 
-const (
-	host     = "localhost"
-	port     = 5432
-	user     = "postgres"
-	password = "wkwkwkwk"
-	dbName   = "praktikum_mcs_bab6"
-)
+// const (
+// 	host     = "localhost"
+// 	port     = 5432
+// 	user     = "postgres"
+// 	password = "wkwkwkwk"
+// 	dbName   = "praktikum_mcs_bab6"
+// )
 
 var (
 	DB  *sql.DB
