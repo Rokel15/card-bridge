@@ -56,6 +56,11 @@ func main() {
 		log.Fatalf("Error Open DB: %v\n", err)
 	}
 
+	err = DB.Ping()
+	if err != nil {
+		log.Fatalf("Error pinging Database: %v\n", err)
+	}
+
 	database.DBMigrate(DB)
 
 	defer DB.Close()
